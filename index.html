@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="title">
+        <h1 class="display-3">Weather Dashboard</h1>
+        <p id="day" class="lead"></p>
+        <p id="time" class="lead"></p>
+    </header>
+    <form id="search-form">
+        <input type="text" id="city-name">
+        <input type="button" value="Search" id="search-btn">
+    </form>
+
+    <main>
+        <div class="col-12">
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <ul id="recent-searches">
+                    </ul>
+                </div>
+                <div class="col-9">
+                    <div id="current-cond" class="col-10 mb-3">
+                        <div class="w3-card">
+                            <h2 id="current-title">City:</h2>
+                            <img src="" alt="" id="icon">
+                            <p id="temp">Temperature:</p>
+                            <p id="wind">Wind:</p>
+                            <p id="humidity">Humidity:</p>
+                        </div>
+                    </div>
+                    <h3 id="5day">5-Day Forecast</h3>
+                    <div class="w3-row">
+                        <!-- <div class="w3-row-padding"> -->
+                        <div class="w3-card w3-col m1 w3-blue">
+                            <div class="card col-2" id="day-1">
+                                <div class="card-body">
+                                    <h3 class="card-title" id="date-1">Monday</h3>
+                                    <img src="" alt="" id="icon-1">
+                                    <p id="day-1-temp">Temp:</p>
+                                    <p id="day-1-wind">Wind:</p>
+                                    <p id="day-1-humidity">Humidity:</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w3-card w3-col m1 w3-blue" id="day-2 ">
+                            <div class="card-body">
+                                <div class="w3-row-padding">
+                                    <h3 class="card-title" id="date-2">Tuesday</h3>
+                                    <img src="" alt="" id="icon-2">
+                                    <p id="day-2-temp">Temp:</p>
+                                    <p id="day-2-wind">Wind:</p>
+                                    <p id="day-2-humidity">Humidity:</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w3-card w3-col m1 w3-blue" id="day-3">
+                            <div class="card-body">
+                                <div class="w3-card">
+                                    <div class="w3-row-padding">
+                                        <h3 class="card-title" id="date-3">Wednesday</h3>
+                                        <img src="" alt="" id="icon-3">
+                                        <p id="day-3-temp">Temp:</p>
+                                        <p id="day-3-wind">Wind:</p>
+                                        <p id="day-3-humidity">Humidity:</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w3-card w3-col m1 w3-blue" id="day-4">
+                            <div class="card-body">
+                                <h3 class="card-title" id="date-4">Thursday</h3>
+                                <img src="" alt="" id="icon-4">
+                                <p id="day-4-temp">Temp:</p>
+                                <p id="day-4-wind">Wind:</p>
+                                <p id="day-4-humidity">Humidity:</p>
+                            </div>
+                        </div>
+
+                        <div class="w3-card w3-col m1 w3-blue" id="day-5">
+                            <div class="card-body">
+                                <h3 class="card-title" id="date-5">Friday</h3>
+                                <img src="" alt="" id="icon-5">
+                                <p id="day-5-temp">Temp:</p>
+                                <p id="day-5-wind">Wind:</p>
+                                <p id="day-5-humidity">Humidity:</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <script src="./script.js"></script>
+    </main>
+</body>
+
+</html>
